@@ -75,6 +75,18 @@ body {margin: 0;}
   padding: 1px 16px;
   height: 1000px;
 }
+.btn{
+  width:100%;
+  background:none;
+  padding:5px;
+  font-size:10px;
+  cursor:pointer;
+  margin:5px 0;
+}
+.btn:hover {
+  background-color: #336699;
+  color: none;
+}
 
 @media screen and (max-width: 900px) {
   ul.sidenav {

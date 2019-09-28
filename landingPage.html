@@ -4,6 +4,24 @@
     <meta charset="utf-8">
     <title>Welcome</title>
     <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#link1").click(function(){
+              $("#here").load("artificialintelligence.html");
+          });
+          $("#link2").click(function(){
+              $("#here").load("automatic.html");
+          });
+          $("#link3").click(function(){
+              $("#here").load("addsysteminfo.html");
+          });
+          $("#link4").click(function(){
+              $("#here").load("Deletesysteminfo.html");
+          });
+      });
+    </script>
   </head>
   <body>
     <div class="container">
@@ -16,22 +34,20 @@
           </ul>
         </nav>
       </div>
-      <div>
-        <div class="sidenav">
-            <ul>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
-              <li><a href="#">Link 4</a></li>
-            </ul>
-        </div>
-        <div class="content specialContent">
-          <section>
-            <header>
-              <h2>Hello World!</h2>
-            </header>
-          </section>
-        </div>
+      <div class="sidenav">
+        <form>
+          <ul>
+            <li> <a id="link1">Artificial Intelligence</a></li>
+            <li> <a id="link2">Machine Learning</a></li>
+            <li> <a id="link3">Big Data</a></li>
+            <li> <a id="link4">Hadoop data Structure</a></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="content specialContent">
+      <div id="here">
+            <h2>Hiii</h2>
       </div>
     </div>
   </body>
