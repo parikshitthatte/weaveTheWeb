@@ -3,18 +3,6 @@
   padding: 10px;
 }
 
-.main-content {
-  padding: 5px;
-  margin: 2px;
-}
-
-.content {
-  background-color: #e0ebeb;
-  /* margin-left:25%; */
-  padding:1px 16px;
-  height:1000px;
-}
-
 div.topnavbar {
   align-content: center;
 }
@@ -48,33 +36,66 @@ div.topnavbar li.fl {
   float: right;
 }
 
-div.sidenavbar {
-  /* float: left; */
-  margin-right: : 0;
-  width: 20%;
-}
+body {margin: 0;}
 
-div.sidenavbar ul {
+.sidenav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 25%;
+  background-color: #f1f1f1;
+  position: absolute;
   height: 100%;
   overflow: auto;
-  background-color: #f1f1f1;
 }
 
-div.sidenavbar li a {
+.sidenav li {
+  list-style-type: none;
+}
+
+.sidenav li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-/* Change the link color on hover */
-div.sidenavbar li a:hover {
+.sidenav li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidenav li a:hover:not(.active) {
   background-color: #555;
   color: white;
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
 }
 
 .specialContent {
