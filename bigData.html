@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script>
+          $(document).ready(function(){
+              $("#bd1").click(function(){
+                  $("#here1").load("content.html");
+              });
+              $("#bd2").click(function(){
+                  $("#here2").load("content.html");
+              });
+              $("#bd3").click(function(){
+                  $("#here3").load("content.html");
+              });
+              $("#bd4").click(function(){
+                  $("#here4").load("content.html");
+              });
+              $("#bd5").click(function(){
+                  $("#here5").load("content.html");
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <div>
+            <div class="links">
+              <form action="content.php" method="post">
+                <ul>
+                  <li><button class="button" type="submit" id="bd1" name="bd1">1. Rapidly Growing IoT Networks</button></li>
+                  <div id="here1"></div>
+                  <li><button class="button" type="submit" id="bd2" name="bd2">2. The Rise of Predictive Analytics</button></li>
+                  <div id="here2"></div>
+                  <li><button class="button" type="submit" id="bd3" name="bd3">3. Quantum Computing</button></li>
+                  <div id="here3"></div>
+                  <li><button class="button" type="submit" id="bd4" name="bd4">4. Dark Data Migration to the Cloud</button></li>
+                  <div id="here4"></div>
+                  <li><button class="button" type="submit" id="bd5" name="bd5">5. Smarter and Tighter Cybersecurity</button></li>
+                  <div id="here5"></div>
+                </ul>
+              </form>
+            </div>
+         </div>
+    </body>
+</html>

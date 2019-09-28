@@ -2,10 +2,49 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="main.css">
+        <script>
+          $(document).ready(function(){
+              $("#ai1").click(function(){
+                  $("#here1").load("content.html");
+              });
+              $("#ai2").click(function(){
+                  $("#here2").load("content.html");
+              });
+              $("#ai3").click(function(){
+                  $("#here3").load("content.html");
+              });
+              $("#ai4").click(function(){
+                  $("#here4").load("content.html");
+              });
+              $("#ai5").click(function(){
+                  $("#here5").load("content.html");
+              });
+              $("#ai6").click(function(){
+                  $("#here6").load("content.html");
+              });
+          });
+        </script>
     </head>
     <body>
         <div>
-            <h2>Hiiiiiiiiiiiiii</h2>
+            <div class="links">
+              <form action="content.php" method="post">
+                <ul>
+                  <li><button class="button" type="submit" id="ai1" name="ai1">1. AI Robots Learn Through Observation</button></li>
+                  <div id="here1"></div>
+                  <li><button class="button" type="submit" id="ai2" name="ai2">2. AI Robot Caregivers Are Filling a Shortfall</button></li>
+                  <div id="here2"></div>
+                  <li><button class="button" type="submit" id="ai3" name="ai3">3. AI Beer Brewers</button></li>
+                  <div id="here3"></div>
+                  <li><button class="button" type="submit" id="ai4" name="ai4">4. AI-Based Cybersecurity</button></li>
+                  <div id="here4"></div>
+                  <li><button class="button" type="submit" id="ai5" name="ai5">5. AI-Based Cybersecurity</button></li>
+                  <div id="here5"></div>
+                  <li><button class="button" type="submit" id="ai6" name="ai4">6. AI-Based Cybersecurity</button></li>
+                  <div id="here6"></div>
+                </ul>
+              </form>
+            </div>
          </div>
     </body>
 </html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script>
+          $(document).ready(function(){
+              $("#cc1").click(function(){
+                  $("#here1").load("content.html");
+              });
+              $("#cc2").click(function(){
+                  $("#here2").load("content.html");
+              });
+              $("#cc3").click(function(){
+                  $("#here3").load("content.html");
+              });
+              $("#cc4").click(function(){
+                  $("#here4").load("content.html");
+              });
+              $("#cc5").click(function(){
+                  $("#here5").load("content.html");
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <div>
+            <div class="links">
+              <form action="content.php" method="post">
+                <ul>
+                  <li><button class="button" type="submit" id="cc1" name="cc1">1. Hybrid and multi-cloud</button></li>
+                  <div id="here1"></div>
+                  <li><button class="button" type="submit" id="cc2" name="cc2">2. Service mesh</button></li>
+                  <div id="here2"></div>
+                  <li><button class="button" type="submit" id="cc3" name="cc3">3. Serverless computing</button></li>
+                  <div id="here3"></div>
+                  <li><button class="button" type="submit" id="cc4" name="cc4">4. Data containers</button></li>
+                  <div id="here4"></div>
+                  <li><button class="button" type="submit" id="cc5" name="cc5">5. Backup and recovery</button></li>
+                  <div id="here5"></div>
+                </ul>
+              </form>
+            </div>
+         </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script>
+          $(document).ready(function(){
+              $("#arvr1").click(function(){
+                  $("#here1").load("content.html");
+              });
+              $("#arvr2").click(function(){
+                  $("#here2").load("content.html");
+              });
+              $("#arvr3").click(function(){
+                  $("#here3").load("content.html");
+              });
+              $("#arvr4").click(function(){
+                  $("#here4").load("content.html");
+              });
+              $("#arvr5").click(function(){
+                  $("#here5").load("content.html");
+              });
+          });
+        </script>
+    </head>
+    <body>
+        <div>
+            <div class="links">
+              <form action="content.php" method="post">
+                <ul>
+                  <li><button class="button" type="submit" id="arvr1" name="arvr1">1. AR and VR increasingly enhanced with AI</button></li>
+                  <div id="here1"></div>
+                  <li><button class="button" type="submit" id="arvr2" name="arvr2">2. VR and AR will increasingly be used in training and teaching</button></li>
+                  <div id="here2"></div>
+                  <li><button class="button" type="submit" id="arvr3" name="arvr3">3. Consumer Entertainment VR hits the mainstream</button></li>
+                  <div id="here3"></div>
+                  <li><button class="button" type="submit" id="arvr4" name="arvr4">4. VR and AR environments becoming increasingly collaborative and social</button></li>
+                  <div id="here4"></div>
+                  <li><button class="button" type="submit" id="arvr5" name="arvr5">5. AR increasingly finding its way into vehicles</button></li>
+                  <div id="here5"></div>
+                </ul>
+              </form>
+            </div>
+         </div>
+    </body>
+</html>
